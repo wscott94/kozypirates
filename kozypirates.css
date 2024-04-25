@@ -1,0 +1,145 @@
+
+b{
+    color:crimson
+}
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    position: static;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(grassyhilloverlook.jpg);
+    }
+
+    audio{
+       position: absolute;
+    align-content: flex-start;
+    }
+    
+p{
+    color: rgb(0, 3, 1);
+    text-align: relative;
+    padding-top: 5%
+    ;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    align-items: flex-end;
+    color: black;
+}
+
+/*-----NavBar Rules-------*/
+
+nav{
+    width:100%;
+    height: 75px;
+    background-color:transparent;
+    color:rgb(236, 14, 14);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+.menu{
+    width:65%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    font-size: 19px;
+    color:black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.menu li a:hover{
+    color:beige
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+.search form{
+    display: flex;
+    margin:0;
+}
+.search input{
+    padding:10px;
+    border:1px solid #ddd;
+    outline: none;
+    border: radius 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+/*----nav bar rules end-----*/
+
+/*-------slide rules------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 95vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 7px solid crimson;
+    border-radius: 5px;
+}
+.wrapper{
+    width: 50%;
+    display: flex;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform:  translateX(-300%);
+    }
+}
+img{
+    width: 42%;
+}
+
+/*----end rules part----*/
